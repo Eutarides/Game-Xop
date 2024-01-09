@@ -107,7 +107,7 @@ class CategoryFilter extends HTMLElement {
       }
 
       .slider-container {
-        height: 100px;
+        height: 60px;
         position: relative;
         width: 100%;
       }

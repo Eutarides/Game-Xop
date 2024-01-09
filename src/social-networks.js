@@ -64,6 +64,7 @@ class socialNetworks extends HTMLElement {
 
       .social-network {
         margin: 0 1rem;
+        width:2.5rem;
       }
     </style>
 

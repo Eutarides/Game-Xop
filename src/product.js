@@ -203,7 +203,6 @@ class Product extends HTMLElement {
       }
 
       .product-price span{
-        color: hsl(0, 0%, 100%);
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
@@ -212,6 +211,11 @@ class Product extends HTMLElement {
 
       .product-price-before-discount{
         text-decoration: line-through;
+        color:grey;
+      }
+
+      .product-price-after-discount{
+        color: hsl(0, 0%, 100%);
       }
 
       .product-buy button{
@@ -280,7 +284,7 @@ class Product extends HTMLElement {
           <div class="product-buy">
             <div class="product-price">
               ${this.product.priceBeforeDiscount ? `<span class="product-price-before-discount">${this.product.priceBeforeDiscount} €</span>` : ''}
-              <span>${this.product.price} €</span>
+              <span class="product-price-after-discount">${this.product.price} €</span>
             </div>
             <button class="add-to-cart" data-product="${this.product.id}">Añadir al carrito</button>
           </div>
